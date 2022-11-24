@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Echo_name
-        run: echo Triggnul me "${{ github.triggering_actor == }}"
+        run: echo Triggnul me "${{ github.triggering_actor }}"
     
   ahoj_svete:
     runs-on: ubuntu-latest
