@@ -41,5 +41,5 @@ jobs:
      - name: Print array
        run: |
           echo nepustim se dokud nedobehne
-          echo "${{ to JSON(needs) }}"
+          echo "${{ toJSON(needs) }}"
   
