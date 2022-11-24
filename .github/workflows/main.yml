@@ -22,4 +22,12 @@ jobs:
         run: |
           echo Ahoj
           echo Ahoj jeste jednou
-          
+    
+  secret_var_job:
+    runs-on: ubuntu-latest
+    env:
+      Promena: Thor
+    steps:
+      - name: ukazka promeny
+        run: echo $Promena
+  
