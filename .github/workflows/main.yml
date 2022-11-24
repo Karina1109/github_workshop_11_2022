@@ -27,7 +27,10 @@ jobs:
     runs-on: ubuntu-latest
     env:
       Promena: Thor
+      VAR: $MY_SECRET
     steps:
       - name: ukazka promeny
-        run: echo $Promena
+        run: |
+          echo $Promena
+          echo $VAR
   
