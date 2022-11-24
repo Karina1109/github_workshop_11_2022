@@ -34,3 +34,12 @@ jobs:
           echo $Promena
           echo $VAR
   
+  zavislak:
+    runs-on: ubuntu-latest
+    needs: [if_job, ahoj_svete, need_job, secret_var_job]
+    steps:
+     - name: Print array
+       run: |
+          echo nepustim se dokud nedobehne
+          echo "${{ to JSON(needs) }}"
+  
